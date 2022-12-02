@@ -7,6 +7,7 @@
 #include <time.h>
 #include <cstdio>
 #include <cstdint>
+#include <math.h>
 
 class SearchMgr{
 public:

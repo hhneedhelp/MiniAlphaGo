@@ -26,8 +26,8 @@ namespace NS_MAGBOARD{
     //single boaard size
     static const int32_t WIDTH = 50;
     //screen coordinate
-    static const int32_t SCREEN_X = 110;
-    static const int32_t SCREEN_Y = 100;
+    static const int32_t SCREEN_X = 530;//
+    static const int32_t SCREEN_Y = 270;//
 }
 
 class MiniAlphaGoBoard:public QMainWindow{
@@ -46,7 +46,7 @@ public:
     void switchFirst(int8_t first);
 
     //get player
-    int8_t whofirst();
+    int8_t whoFirst();
 
     //update board
     void updateBoard(int8_t board_msg[NS_CALMACHINE::BOARD_SIZE][NS_CALMACHINE::BOARD_SIZE]);

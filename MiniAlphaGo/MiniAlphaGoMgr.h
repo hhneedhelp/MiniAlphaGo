@@ -29,7 +29,7 @@ public:
 
     //play chess
     //(x,y) is coordinate
-    int32_t playChess(int8_t player,int32_t x,int8_t y);
+    int32_t playChess(int8_t player,int32_t x,int32_t y);
 
     //init single time
     void initSingleTime();
@@ -41,7 +41,7 @@ private:
     MiniAlphaGoMgr();
 
     //update board
-    int32_t updataBoard(int8_t player);
+    int32_t updateBoard(int8_t player);
 
 private:
     //board
