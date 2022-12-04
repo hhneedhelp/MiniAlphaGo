@@ -3,7 +3,7 @@
 
 //constructor
 MiniAlphaGoBoard::MiniAlphaGoBoard(QWidget *parent){
-    first = NS_MAGBOARD::PLAYER_FIRST;
+    first = NS_MAGBOARD::AI_FIRST;//**
 
     black_num = 2;
     white_num = 2;
@@ -92,12 +92,12 @@ void MiniAlphaGoBoard::paintChess(){
 void MiniAlphaGoBoard::paintTime(){
     //single time and total time (ai)
     std::string ai_time = std::to_string(ai_single_time) + " : " + std::to_string(ai_total_time);
-    board->setPen(QPen(Qt::blue, 2, Qt::SolidLine));
+    board->setPen(QPen(Qt::white, 2, Qt::SolidLine));
     board->drawText(50, 90, ai_time.c_str());
 
     //sigle time and total time (player)
     std::string player_time = std::to_string(player_single_time) + " : " + std::to_string(player_total_time);
-    board->setPen(QPen(Qt::blue, 2, Qt::SolidLine));
+    board->setPen(QPen(Qt::white, 2, Qt::SolidLine));
     board->drawText(530, 90, player_time.c_str());
 }
 
@@ -143,7 +143,7 @@ void MiniAlphaGoBoard::paintEvent(QPaintEvent *){
 
     //set background color
     QPalette pal = palette();
-    pal.setColor(QPalette::Window,Qt::gray);
+    pal.setColor(QPalette::Window,Qt::darkBlue);
     setPalette(pal);
 
     //begin

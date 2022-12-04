@@ -35,7 +35,7 @@ void MiniAlphaGoUI::createGameUi(){
 
     //set background color
     QPalette pal = this->palette();
-    pal.setColor(QPalette::Window,QColor("black"));//Window is background
+    pal.setColor(QPalette::Window,QColor("blue"));//Window is background
     this->setPalette(pal);//***set palette, this can be neglect
 
     //set name
@@ -86,4 +86,7 @@ void MiniAlphaGoUI::aiFirst(){
 
     //show board
     MiniAlphaGoBoard::getInstance().show();
+
+    // ai play chess
+    MiniAlphaGoMgr::getInstance().updateBoard(NS_MAGBOARD::AI_FIRST);//**
 }

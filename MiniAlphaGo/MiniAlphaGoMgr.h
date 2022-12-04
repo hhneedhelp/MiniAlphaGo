@@ -34,14 +34,17 @@ public:
     //init single time
     void initSingleTime();
 
+    //update board
+    int32_t updateBoard(int8_t player);//**
+
 private:
     /**
      * @brief constructo
      * */
     MiniAlphaGoMgr();
 
-    //update board
-    int32_t updateBoard(int8_t player);
+//    //update board
+//    int32_t updateBoard(int8_t player);
 
 private:
     //board

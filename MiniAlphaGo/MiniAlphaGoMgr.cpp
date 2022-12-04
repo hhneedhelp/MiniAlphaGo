@@ -15,6 +15,8 @@ MiniAlphaGoMgr::MiniAlphaGoMgr(){
     m_board[right_pos][right_pos] = NS_CALMACHINE::BLACK_CHESS;
 
     m_single_start_time = time(nullptr);
+
+    SearchMgr::getInstance().updateMct(m_board);//**
 }
 
 MiniAlphaGoMgr::~MiniAlphaGoMgr(){}
